@@ -3,19 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>around Capstone Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="wrapper">
     <header>
-
+        <div class="nav-homepage">
+            <img id="logo" src="images/around-u.png" alt="around-you">
+            <div class="nav-secondpage">
+            </div>
+        </div>
     </header>
 
-    <main>
+
+
+    <main class="landing-page">
+        <p id="landing-page-heading">Explore events happening around you</p>
+        <div>
+            <div>
+                <img src="" id="spinning-image" alt="">
+            </div>
+        </div>
+        <section>
+            <button class="button">Explore</button>
+        </section>
 
     </main>
+
+
+
+
+
+    <main class="search-results">
+        <section class="column-wrapper">
+            <div class="half-column">
+                <h2 id="result-list">Results
+                    <ul>
+                        <li id="search-results"></li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="half-column white-background">
+                <form id="search-form">
+                    <label id="parameters">Keyword</label>
+                    <input type="text" id="keyword-value" value="">
+                    <label id="parameters">Location</label>
+                    <input type="text" id="location-value" value="">
+                    <label id="parameters">Date</label>
+                    <input type="text" id="date-value" value="">
+                    <input type="submit" value="search">
+                </form>
+
+            </div>
+
+        </section>
+    </main>
     <footer>
+        <div class="personal-info">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/patrick-keshishian-81932068/"><img id=linkedin-image src="images/In-Black-21px-R.png" alt=""></a>
+                    <li><a href="https://angel.co/pkeshishian?al_content=view+your+profile&al_source=transaction_feed%2Fnetwork_sidebar"><img id="angelist-image" src="images/AngelList_Black_Victory_Hand.png" alt=""></a>
+                        <li><a href="patrick.keshishian@gmail.com"><img id="gmail-image" src="images/if_gmail_1220367.png" alt=""></a>
+                            <li><a href="https://github.com/PantherPat"><img id="github-image" src="images/GitHub-Mark-64px.png" alt=""></a>
+            </ul>
+        </div>
+
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="script.js"></script>

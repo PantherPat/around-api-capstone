@@ -1,49 +1,38 @@
 ## "aroUnd" | Thinkful API Capstone
-The Shakespeare Passport app is designed for Theatrical Performers, Theatre Goers, and Theatre enthusiast alike. It allows a User to compile a list of plays by SEEN, PERFORMED, and READ tracking date and location.
+The aroUnd app is allows users to search for events in their area by searching with keywords, dates, and by location. The app will populate events ranging from sports to theater events based off of the parameters chosen by the user.
 
 
 
 ## Screenshots
 
-Home Page View | Login Page View #2
-:-------------------------:|:-------------------------:
-![Home Page](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/home-page.jpg)  |  ![Login Page](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/login.jpg)
-User Dashboard | Seen Entry
-![User Dashboard](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/user-dashboard.jpg) | ![Seen Entry](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/seen-entry.jpg)
-Add Entry  | Edit Entry
-![Add Entry](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/add-entry.jpg) | ![Edit Entry](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/edit-entry.jpg)
-Delete Entry |
-![Delete Entry](https://github.com/KatiLong/shakespeare-passport-node-capstone/blob/master/github-images/delete-entry.jpg) |
 
 ## User Cases
-This app is for three types of users:
-1. READ - For Theatrical Students, so that they can track Plays that have been read (by title and author, optional edition) by date and include Notes.
-2. SEEN - For Theatre-Goers (enthusiasts, specialists, etc.), so that they can track all the shows the have seen, where and when they have seen them, and any specific Notes they would like to add.
-3. PERFORMED - For Theatrical Artists and Perfomers, so that they can record all shows they have performed in by Role, Location, Date and include Notes (and Lines).
-
+As a visitor I want to know what this app is about so I can decide to move forward
+As a tourist I want to know what events are happening in a certain location, so when I travel I can easily populate the listings.
+As visitor I want to know what sporting events are going on in a particular city on a specific date
+As a user I want to be able to purchase a ticket to the event i am in interested in, so I dont have to leave the app in order to finalize my decision.
 ### UI Flow
-![UI Flow handwritten draft](https://github.com/KatiLong/node-capstone/blob/master/github-images/node-capstone-user-flow.jpg)
+
 
 ### Wireframe _main
-![Wireframe _Main](https://github.com/KatiLong/node-capstone/blob/master/github-images/wireframe-v1.jpg)
+
 
 ## Working Prototype
-You can access a working prototype of the app here: https://shakespeare-passport.herokuapp.com/
+
 
 ## Functionality
 The app's functionality includes:
-* Every User has the ability to create an account that stores information unique to them
-* User can Add Entries, Update Entries, and Delete Entries
-* User can sort entries by: Date & Type (Read, Seen, Performed)
+* Users can search by date, keywords, and location.
+* The app will populate events based off of the user input to best find events that are happening within the given dates
+* The idea is to give users the ability to find all posted events surrounding them through the Eventful API as well as the Ticketmaster API.
 
 ## Technology
 * Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery
-* Back-End: Node.js | Express.js | Mocha | Chai | RESTful API Endpoints | MongoDB | Mongoose
 
 
 
 ## Responsive
-App is strongly built to be usuable on mobile devices, as well as responsive across mobile, tablet, laptop, and desktop screen resolutions.
+App is strongly built to be usuable on mobile devices, as well as responsive across tablet, laptop, and desktop screen resolutions.
 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
