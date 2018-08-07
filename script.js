@@ -3,7 +3,30 @@
 /*--- Step 2 - Defining functions ---*/
 
 /*--- Step 3 - Using functions ---*/
+$(document).ready(function () {
+    //do stuff
+    $('main').hide();
+    $('.landing-page').show();
 
+});
+
+//when clicking on explore button the page shows results container but not the results on it's own.
+$(document).on('click', '.button', function (event) {
+    event.preventDefault();
+    $('main').hide();
+    $('.search-results').show();
+    $('#result-list').hide();
+
+});
+
+
+//on search button click inside the form we show results container and the results in a row.
+$(document).submit('#search-form', function (event) {
+    event.preventDefault();
+    $('main').hide();
+    $('.search-results').show();
+    $('#result-list').show();
+});
 
 
 

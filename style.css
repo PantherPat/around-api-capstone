@@ -175,10 +175,16 @@ Content styles (Main Module)
     height: 500px;
 }
 
-.landing-page #logo {
+.landing-page img {
     width: 50%;
     margin-top: 5%;
     margin-bottom: 10%;
+}
+
+.search-results img {
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 5%%;
 }
 
 .landing-page #landing-page-heading {
