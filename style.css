@@ -163,48 +163,48 @@ Header styles (Main Module)
 
 }
 
-#logo {
-    height: 200px;
-    width: auto;
-}
-
-.nav-secondpage {
-    margin-top: 15%;
-}
-
 /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
-#landing-page-heading {
+.landing-page {
+    background-image: url("images/hero-image.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.landing-page #logo {
+    height: 200px;
+    width: auto;
+}
+
+.landing-page #landing-page-heading {
     font-family: "urw-din-semi-condensed", "Helvetica", "Arial", "sans-serif";
     font-size: 45px;
     font-weight: lighter;
-    color: white;
-
-
+    color: darkblue;
 }
 
-#camera-image {
-    height: 500px;
-    width: 100%
-}
-
-.button {
+.landing-page .button {
     font-family: 'Noto Sans', sans-serif;
     border-radius: 50px;
-    background-color: #FFE84D;
+    background-color: darkblue;
     font-size: 25px;
     color: white;
     font-weight: lighter;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-bottom: 20px;
+}
 
+.landing-page .button:hover {
+    background-color: white;
+    color: darkblue;
 }
 
 .column-wrapper {
