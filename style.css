@@ -176,8 +176,9 @@ Content styles (Main Module)
 }
 
 .landing-page #logo {
-    height: 200px;
-    width: auto;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .landing-page #landing-page-heading {
