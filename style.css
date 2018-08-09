@@ -221,6 +221,47 @@ Content styles (Main Module)
 
 }
 
+.column-wrapper ul {
+    overflow: hidden;
+    margin-top: 1em;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.column-wrapper li {
+    float: left;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    color: darkblue;
+    width: auto;
+
+}
+.column-wrapper h2{
+    width: 100%;
+    display: block;
+}
+
+.column-wrapper li:empty {
+    display: none;
+}
+
+
+.column-wrapper li img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.column-wrapper li p {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #434343;
+    min-height: 4rem;
+}
+
+
 .half-column {
     width: 49%;
     display: inline-block;
@@ -244,7 +285,7 @@ Content styles (Main Module)
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    height: 30%
+    height: 30%;
 }
 
 .half-column.white-background {
@@ -285,6 +326,8 @@ place all the mobile tables styles below this line
     .half-column {
         display: block;
         width: 100%;
+    }
+
     }
 }
 

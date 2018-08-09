@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>around Capstone Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
 
 <body class="wrapper">
@@ -34,19 +36,19 @@
         <section class="column-wrapper">
             <div class="half-column">
                 <h2 id="result-list">Results
-                    <ul>
-                        <li id="search-results"></li>
+                    <ul id="search-results">
+                        <li></li>
                     </ul>
                 </h2>
             </div>
             <div class="half-column white-background">
                 <form id="search-form">
                     <label id="parameters">Keyword</label>
-                    <input type="text" id="keyword-value" value="music">
+                    <input type="text" id="keyword-value" value="music" autocomplete="off">
                     <label id="parameters">Location</label>
-                    <input type="text" id="location-value" value="washington dc">
+                    <input type="text" id="location-value" value="washington dc" autocomplete="off">
                     <label id="parameters">Date</label>
-                    <input type="text" id="date-value" value="08/25/2018">
+                    <input type="text" id="date-value" autocomplete="off">
                     <input type="submit" value="search">
                 </form>
 
@@ -66,7 +68,9 @@
 
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 
 </html>
