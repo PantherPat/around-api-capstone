@@ -222,10 +222,10 @@ Content styles (Main Module)
 }
 
 .column-wrapper ul {
-    overflow: hidden;
+/*    overflow: hidden;*/
     margin-top: 1em;
     list-style-type: none;
-    display: inline-block;
+/*    display: inline-block;*/
 }
 
 .column-wrapper li {

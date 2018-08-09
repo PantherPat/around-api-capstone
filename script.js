@@ -129,7 +129,7 @@ $(document).submit('#search-form', function (event) {
         if (result.description == null) {
             console.log("this is where the problem is")
         } else {
-            buildTheHtmlOutput += "<div><pre>" + result.description + "</pre></div>";
+            buildTheHtmlOutput += "<p>" + result.description.replace(/<p>,</p > , < br > , < \/br>/g, '') + "</p>";
         }
         buildTheHtmlOutput += "<a href='" + result.url + "' target='_blank'>";
         buildTheHtmlOutput += "<p> Start date: " + result.start_time + "</p>";
