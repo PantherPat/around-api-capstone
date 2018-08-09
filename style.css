@@ -229,16 +229,22 @@ Content styles (Main Module)
 }
 
 .column-wrapper li {
-    float: left;
+    display: inline-block;
     margin-bottom: 2em;
     padding: 1em;
     border: 1px solid darkblue;
     border-radius: 10px;
     color: darkblue;
-    width: auto;
+    width: 48%;
+    vertical-align: top;
+    height: 200px;
+    overflow-y: auto;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
 
 }
-.column-wrapper h2{
+
+.column-wrapper h2 {
     width: 100%;
     display: block;
 }
@@ -255,10 +261,24 @@ Content styles (Main Module)
 }
 
 .column-wrapper li p {
+/*
     padding-bottom: 1em;
     margin-bottom: 1em;
     border-bottom: 1px solid #434343;
     min-height: 4rem;
+*/
+    word-wrap: break-word;
+}
+
+.column-wrapper li div {
+    width: 100%;
+    display: block;
+    border: 1px solid red;
+
+}
+
+.column-wrapper li div a {
+    display: none;
 }
 
 
@@ -327,8 +347,12 @@ place all the mobile tables styles below this line
         display: block;
         width: 100%;
     }
+    .column-wrapper li {
+        display: block;
+        width: 100%;
 
     }
+
 }
 
 

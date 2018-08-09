@@ -53,56 +53,26 @@ $(document).submit('#search-form', function (event) {
         getEventfulApi(lat, long);
     }
 
-    //            function getEventfulApi(lat, long) {
-    //                /* Update all the parameters for your API test*/
-    //                var params = {
-    //                    app_key: 'Jsr6ndZBQLW9qdLL',
-    //                    keywords: keywordInput,
-    //                    location: lat + ',' + long,
-    //                    date: dateInput,
-    //                    within: 25,
-    //                };
-    //
-    //                        var result = $.ajax({
-    //                                /* update API end point */
-    //                                url: "http://api.eventful.com/json/events/search",
-    //                                data: params,
-    //                                dataType: "jsonp",
-    //                                /*set the call type GET / POST*/
-    //                                type: "GET"
-    //                            })
-
-    /* if the call is successful (status 200 OK) show results */
-    //                            .done(function (result) {
-    //                                /* if the results are meeningful, we can just console.log them */
-    //                                console.log(result);
-    //                                displayEventful(result);
-    //                            })
-    //                            /* if the call is NOT successful show errors */
-    //                            .fail(function (jqXHR, error, errorThrown) {
-    //                                console.log(jqXHR);
-    //                                console.log(error);
-    //                                console.log(errorThrown);
-    //                            });
-    //                    }
     function getEventfulApi(lat, long) {
         /* Update all the parameters for your API test*/
         var params = {
-            //key: "gTqUrGAhPVOo80W5dwim0PACPObENQ0h",
-            keyword: keywordInput,
+            app_key: 'Jsr6ndZBQLW9qdLL',
+            keywords: keywordInput,
             location: lat + ',' + long,
-            dates: dateInput,
-            distance: 5,
+            date: dateInput,
+            within: 25,
         };
+
         var result = $.ajax({
                 /* update API end point */
-                url: "https://app.ticketmaster.com/discovery/v2/events/G5diZfkn0B-bh.json?apikey=gTqUrGAhPVOo80W5dwim0PACPObENQ0h",
-//                data: params,
-                dataType: "json",
+                url: "http://api.eventful.com/json/events/search",
+                data: params,
+                dataType: "jsonp",
                 /*set the call type GET / POST*/
-                type: "GET",
-                async: true
+                type: "GET"
             })
+
+            /* if the call is successful (status 200 OK) show results */
             .done(function (result) {
                 /* if the results are meeningful, we can just console.log them */
                 console.log(result);
@@ -115,6 +85,36 @@ $(document).submit('#search-form', function (event) {
                 console.log(errorThrown);
             });
     }
+    //    function getEventfulApi(lat, long) {
+    //        /* Update all the parameters for your API test*/
+    //        var params = {
+    //            //key: "gTqUrGAhPVOo80W5dwim0PACPObENQ0h",
+    //            keyword: keywordInput,
+    //            location: lat + ',' + long,
+    //            dates: dateInput,
+    //            distance: 5,
+    //        };
+    //        var result = $.ajax({
+    //                /* update API end point */
+    //                url: "https://app.ticketmaster.com/discovery/v2/events/G5diZfkn0B-bh.json?apikey=gTqUrGAhPVOo80W5dwim0PACPObENQ0h",
+    ////                data: params,
+    //                dataType: "json",
+    //                /*set the call type GET / POST*/
+    //                type: "GET",
+    //                async: true
+    //            })
+    //            .done(function (result) {
+    //                /* if the results are meeningful, we can just console.log them */
+    //                console.log(result);
+    //                displayEventful(result);
+    //            })
+    //            /* if the call is NOT successful show errors */
+    //            .fail(function (jqXHR, error, errorThrown) {
+    //                console.log(jqXHR);
+    //                console.log(error);
+    //                console.log(errorThrown);
+    //            });
+    //    }
 
     function displayEventful(data) {
         console.log('In displayEventful');
@@ -126,9 +126,10 @@ $(document).submit('#search-form', function (event) {
         console.log(result);
         let buildTheHtmlOutput = "<li>";
         buildTheHtmlOutput += "<h2>" + result.title + "</h2>";
-        buildTheHtmlOutput += "<p>" + result.description + "</p>";
-        if (result.description != null) {
+        if (result.description == null) {
             console.log("this is where the problem is")
+        } else {
+            buildTheHtmlOutput += "<div><pre>" + result.description + "</pre></div>";
         }
         buildTheHtmlOutput += "<a href='" + result.url + "' target='_blank'>";
         buildTheHtmlOutput += "<p> Start date: " + result.start_time + "</p>";
