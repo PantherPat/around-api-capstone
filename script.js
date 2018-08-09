@@ -65,7 +65,7 @@ $(document).submit('#search-form', function (event) {
 
         var result = $.ajax({
                 /* update API end point */
-                url: "http://api.eventful.com/json/events/search",
+                url: "https://api.eventful.com/json/events/search",
                 data: params,
                 dataType: "jsonp",
                 /*set the call type GET / POST*/
