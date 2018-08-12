@@ -1,8 +1,3 @@
-/*--- Step 1 - Defining global variables ---*/
-
-/*--- Step 2 - Defining functions ---*/
-
-/*--- Step 3 - Using functions ---*/
 $(document).ready(function () {
     //do stuff
     $('main').hide();
@@ -85,36 +80,6 @@ $(document).submit('#search-form', function (event) {
                 console.log(errorThrown);
             });
     }
-    //    function getEventfulApi(lat, long) {
-    //        /* Update all the parameters for your API test*/
-    //        var params = {
-    //            //key: "gTqUrGAhPVOo80W5dwim0PACPObENQ0h",
-    //            keyword: keywordInput,
-    //            location: lat + ',' + long,
-    //            dates: dateInput,
-    //            distance: 5,
-    //        };
-    //        var result = $.ajax({
-    //                /* update API end point */
-    //                url: "https://app.ticketmaster.com/discovery/v2/events/G5diZfkn0B-bh.json?apikey=gTqUrGAhPVOo80W5dwim0PACPObENQ0h",
-    ////                data: params,
-    //                dataType: "json",
-    //                /*set the call type GET / POST*/
-    //                type: "GET",
-    //                async: true
-    //            })
-    //            .done(function (result) {
-    //                /* if the results are meeningful, we can just console.log them */
-    //                console.log(result);
-    //                displayEventful(result);
-    //            })
-    //            /* if the call is NOT successful show errors */
-    //            .fail(function (jqXHR, error, errorThrown) {
-    //                console.log(jqXHR);
-    //                console.log(error);
-    //                console.log(errorThrown);
-    //            });
-    //    }
 
     function displayEventful(data) {
         console.log('In displayEventful');
@@ -129,7 +94,7 @@ $(document).submit('#search-form', function (event) {
         if (result.description == null) {
             console.log("this is where the problem is")
         } else {
-            buildTheHtmlOutput += "<p>" + result.description.replace(/<p>,</p > , < br > , < \/br>/g, '') + "</p>";
+            buildTheHtmlOutput += "<p>" + result.description.replace(/(<([^>]+)>)/ig, "") + "</p>";
         }
         buildTheHtmlOutput += "<a href='" + result.url + "' target='_blank'>";
         buildTheHtmlOutput += "<p> Start date: " + result.start_time + "</p>";

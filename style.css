@@ -158,9 +158,12 @@ Header styles (Main Module)
     width: 100%;
     height: 48px;
     margin-bottom: 5%;
+}
 
-
-
+.nav-homepage img {
+    width: 30%;
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 /* -------------------------------------
@@ -179,12 +182,6 @@ Content styles (Main Module)
     width: 50%;
     margin-top: 5%;
     margin-bottom: 10%;
-}
-
-.search-results img {
-    width: 30%;
-    margin-top: 2%;
-    margin-bottom: 5%%;
 }
 
 .landing-page #landing-page-heading {
@@ -222,10 +219,18 @@ Content styles (Main Module)
 }
 
 .column-wrapper ul {
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
     margin-top: 1em;
     list-style-type: none;
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
+}
+
+.column-wrapper ul .background-image {
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+
 }
 
 .column-wrapper li {
@@ -253,15 +258,8 @@ Content styles (Main Module)
     display: none;
 }
 
-
-.column-wrapper li img {
-    display: block;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
 .column-wrapper li p {
-/*
+    /*
     padding-bottom: 1em;
     margin-bottom: 1em;
     border-bottom: 1px solid #434343;
@@ -269,6 +267,16 @@ Content styles (Main Module)
 */
     word-wrap: break-word;
 }
+
+.column-wrapper li .results-image {
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
 
 .column-wrapper li div {
     width: 100%;
@@ -280,6 +288,7 @@ Content styles (Main Module)
 .column-wrapper li div a {
     display: none;
 }
+
 
 
 .half-column {
@@ -294,6 +303,7 @@ Content styles (Main Module)
     display: block;
 
 }
+
 
 .half-column input {
     margin-top: 2%;
@@ -310,6 +320,7 @@ Content styles (Main Module)
 
 .half-column.white-background {
     background-color: #FF918E;
+
 }
 
 
