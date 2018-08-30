@@ -28,7 +28,8 @@ $(document).submit('#search-form', function (event) {
     const keywordInput = $("#keyword-value").val();
     const dateInput = $("#date-value").val();
 
-    console.log(locationInput, keywordInput, dateInput)
+    console.log(locationInput, keywordInput, dateInput);
+    $(document).removeClass("background-image");
 
     //define default gps coordinates for New York
     let lat = "40.730610";

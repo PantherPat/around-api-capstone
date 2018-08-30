@@ -227,6 +227,7 @@ Content styles (Main Module)
     background-image: url("images/rawpixel-191102-unsplash.jpg");
     background-position: center center;
     background-size: cover;
+    height: 300px;
 
 }
 
@@ -293,18 +294,20 @@ Content styles (Main Module)
 
 
 .half-column {
-    width: 49%;
+    width: 49.9%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    height: 300px;
 
 }
 
 .half-column-fixed {
-    width: 49%;
+    width: 49.5%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    height: 300px;
 
 }
 
