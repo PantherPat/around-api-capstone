@@ -1,5 +1,5 @@
 ## "aroUnd" | Thinkful API Capstone
-The aroUnd app is allows users to search for events in their area by searching with keywords, dates, and by location. The app will populate events ranging from sports to theater events based off of the parameters chosen by the user.
+The aroUnd app is allows users to search for events in their area by searching with keywords and by location. The app will populate events ranging from sports to theater events based off of the parameters chosen by the user.
 
 
 
@@ -9,8 +9,7 @@ The aroUnd app is allows users to search for events in their area by searching w
 ## User Cases
 As a visitor I want to know what this app is about so I can decide to move forward
 As a tourist I want to know what events are happening in a certain location, so when I travel I can easily populate the listings.
-As visitor I want to know what sporting events are going on in a particular city on a specific date
-As a user I want to be able to purchase a ticket to the event i am in interested in, so I dont have to leave the app in order to finalize my decision.
+As visitor I want to know what sporting events are going on in a particular city on a specific date.
 ### UI Flow
 
 
