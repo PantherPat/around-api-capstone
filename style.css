@@ -64,10 +64,6 @@ General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {
-    text-align: center
-}
-
 html {
     background-color: #9FC8FF;
     -webkit-background-size: cover;
@@ -76,14 +72,12 @@ html {
     background-size: cover;
 }
 
-footer {
-    display: inline-block;
-    width: 100%;
-    bottom: 0;
-    position: 0;
-    margin-top: 15%;
-    position: fixed absolute;
+body {
+    text-align: center
+}
 
+main {
+    margin-bottom: 50px;
 }
 
 #gmail-image,
@@ -336,6 +330,12 @@ Content styles (Main Module)
     top: 0;
     right: 0;
     display: block;
+
+}
+
+footer {
+    display: block;
+    width: 100%;
 
 }
 
