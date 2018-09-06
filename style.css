@@ -224,7 +224,7 @@ Content styles (Main Module)
 .column-wrapper .background-image {
     margin: 0;
     padding: 0;
-    background-image: url("images/rawpixel-191102-unsplash.jpg");
+    background-image: url("images/map%20pinw.jpg");
     background-position: center center;
     background-size: cover;
     height: 300px;
@@ -233,6 +233,7 @@ Content styles (Main Module)
 
 #search-results li img {
     width: 100%;
+    margin-top: 10px;
 }
 
 .column-wrapper li {
@@ -244,7 +245,7 @@ Content styles (Main Module)
     color: darkblue;
     width: 48%;
     vertical-align: top;
-    height: 200px;
+    height: 270px;
     overflow-y: auto;
     margin-left: 0.5%;
     margin-right: 0.5%;

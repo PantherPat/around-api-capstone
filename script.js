@@ -50,6 +50,7 @@ function getTicketmasterApi(lat, long, keywordInput) {
 function displayTicketmaster(data) {
     console.log('In displayEventful');
     console.log(data); // NOTE - PROGRAM THROWS ERROR BEFORE THIS POINT, SO HAVEN'T VIEWED OUTPUT
+    $("#result-list ul").html("");
     const results = data._embedded.events.map((item, index) => renderTicketmaster(item)); // THIS NEEDS TO BE EDITED ONCE I CAN SEE THE OBJECT
 }
 

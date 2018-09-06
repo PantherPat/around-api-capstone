@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
     <meta charset="UTF-8">
     <title>around Capstone Project</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -15,7 +15,7 @@
 
     <main class="landing-page">
         <img id="logo" src="images/around-u-transparent.gif" alt="around-you">
-        <p id="landing-page-heading">Explore events happening around you</p>
+        <p id="landing-page-heading">Discover events happening around you</p>
         <section>
             <button class="button">Explore</button>
         </section>
@@ -34,7 +34,7 @@
         </header>
         <section class="column-wrapper">
             <div class="half-column background-image">
-                <h2 id="result-list">Results
+                <h2 id="result-list">
                     <ul id="search-results">
                     </ul>
                 </h2>
@@ -42,9 +42,9 @@
             <div class="half-column-fixed white-background" id="stickyContent">
                 <form id="search-form">
                     <label id="parameters">Keyword</label>
-                    <input type="text" id="keyword-value" value="music" autocomplete="off">
+                    <input type="text" id="keyword-value" value=" " autocomplete="off">
                     <label id="parameters">Location</label>
-                    <input type="text" id="location-value" value="washington dc" autocomplete="off">
+                    <input type="text" id="location-value" value=" " autocomplete="off">
                     <input type="submit" value="search">
                 </form>
 
@@ -55,10 +55,25 @@
     <footer>
         <div class="personal-info">
             <ul>
-                <li><a href="https://www.linkedin.com/in/patrick-keshishian-81932068/"><img id=linkedin-image src="images/In-Black-21px-R.png" alt=""></a>
-                    <li><a href="https://angel.co/pkeshishian?al_content=view+your+profile&al_source=transaction_feed%2Fnetwork_sidebar"><img id="angelist-image" src="images/AngelList_Black_Victory_Hand.png" alt=""></a>
-                        <li><a href="patrick.keshishian@gmail.com"><img id="gmail-image" src="images/if_gmail_1220367.png" alt=""></a>
-                            <li><a href="https://github.com/PantherPat"><img id="github-image" src="images/GitHub-Mark-64px.png" alt=""></a>
+                <li>
+                    <a href="https://www.linkedin.com/in/patrick-keshishian-81932068/" target="_blank">
+                <img id=linkedin-image src="images/In-Black-21px-R.png" alt="" >
+                </a>
+                </li>
+                <li>
+                    <a href="https://angel.co/pkeshishian?al_content=view+your+profile&al_source=transaction_feed%2Fnetwork_sidebar" target="_blank">
+                    <img id="angelist-image" src="images/AngelList_Black_Victory_Hand.png" alt="" ></a>
+                </li>
+                <li>
+                    <a href="patrick.keshishian@gmail.com" target="_blank">
+                <img id="gmail-image" src="images/if_gmail_1220367.png" alt="" >
+                </a>
+                </li>
+                <li>
+                    <a href="https://github.com/PantherPat" target="_blank">
+                <img id="github-image" src="images/GitHub-Mark-64px.png" alt="" >
+                </a>
+                </li>
             </ul>
         </div>
 
@@ -80,6 +95,7 @@
                 header.classList.remove("sticky");
             }
         }
+
     </script>
     <script src="script.js"></script>
 </body>
