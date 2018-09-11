@@ -73,40 +73,11 @@ html {
 }
 
 body {
-    text-align: center
+    text-align: center;
 }
 
 main {
-    margin-bottom: 50px;
-}
-
-#gmail-image,
-#linkedin-image,
-#github-image {
-    width: 30px;
-    height: auto;
-
-
-
-}
-
-#angelist-image {
-    width: 25px;
-    height: 25px;
-
-
-}
-
-.personal-info li {
-    display: inline-block;
-    height: 2em;
-    width: 2.5em;
-    margin-left: 2.25em;
-    margin-right: 2.25em;
-
-
-
-
+    margin-bottom: 150px;
 }
 
 #background-image-wrapper {
@@ -335,7 +306,28 @@ Content styles (Main Module)
 footer {
     display: block;
     width: 100%;
+    background-color: #0035c957;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: 2px solid darkblue;
 
+}
+
+.personal-info li {
+    display: inline-block;
+    height: 2em;
+    width: 2.5em;
+    margin-left: 2.25em;
+    margin-right: 2.25em;
+    vertical-align: middle;
+}
+
+#gmail-image,
+#linkedin-image,
+#github-image,
+#angelist-image {
+    width: auto;
+    height: 25px
 }
 
 

@@ -13,15 +13,15 @@ function getTicketmaster() {
 function saveLocation(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
-    getTicketmasterApi(lat, long);
+    //    getTicketmasterApi(lat, long);
 }
 
-function getTicketmasterApi(lat, long, keywordInput) {
+function getTicketmasterApi(locationInput, keywordInput) {
     /* Update all the parameters for your API test*/
     var params = {
         apikey: 'gTqUrGAhPVOo80W5dwim0PACPObENQ0h',
         keyword: keywordInput,
-        //            location: lat + ',' + long,
+        city: locationInput,
         within: 25,
     };
     var result = $.ajax({
@@ -37,7 +37,11 @@ function getTicketmasterApi(lat, long, keywordInput) {
         .done(function (result) {
             /* if the results are meeningful, we can just console.log them */
             console.log(result);
-            displayTicketmaster(result);
+            if (result.page.totalElements == 0) {
+                alert("No Results Found")
+            } else {
+                displayTicketmaster(result)
+            }
         })
         /* if the call is NOT successful show errors */
         .fail(function (jqXHR, error, errorThrown) {
@@ -96,8 +100,13 @@ $(document).submit('#search-form', function (event) {
     $('#result-list').show();
     const locationInput = $("#location-value").val();
     const keywordInput = $("#keyword-value").val();
-
-    console.log(locationInput, keywordInput, );
-    $(".half-column").removeClass("background-image");
-    getTicketmasterApi(lat, long, keywordInput);
+    if (locationInput == "") {
+        alert("Please specify a location")
+    } else if (keywordInput == "") {
+        alert("Please specify a keyword")
+    } else {
+        console.log(locationInput, keywordInput, );
+        $(".half-column").removeClass("background-image");
+        getTicketmasterApi(locationInput, keywordInput);
+    }
 });
