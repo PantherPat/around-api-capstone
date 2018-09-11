@@ -199,6 +199,30 @@ Content styles (Main Module)
     margin-top: 10px;
 }
 
+#search-results li a p {
+    color: black;
+    font: 15px bold black;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+#search-results li a p:hover {
+    color: red;
+    font: 15px bold red;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+#search-results h2 {
+    color: blue;
+    font: 20px bold blue;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 4px;
+}
+
+
 .column-wrapper li {
     display: inline-block;
     margin-bottom: 2em;
