@@ -207,6 +207,10 @@ Content styles (Main Module)
     font-family: 'Noto Serif KR', sans-serif;
 }
 
+#search-results a {
+    text-decoration: none;
+}
+
 #search-results li a p:hover {
     color: red;
     font: 15px bold red;
@@ -400,6 +404,10 @@ footer {
     #landing-page-heading {
         font-size: 25px;
     }
+    #parameters:first-child {
+        padding-top: 20px;
+    }
+
 
 }
 
